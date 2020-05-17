@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/muser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        android:text=""
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mtext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:maxWidth="250dp"
+        android:textSize="18dp"
+        android:background="@drawable/others_text"
+        android:visibility="invisible"
+        android:autoLink="all"
+        android:textColorLink="@android:color/white"
+        android:layout_below="@id/muser"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/mtime"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/mtext"
+        android:visibility="invisible"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/mtext2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:maxWidth="250dp"
+        android:visibility="invisible"
+        android:autoLink="all"
+        android:textColorLink="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/my_text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/mtime2"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/mtext2"
+        android:layout_alignParentRight="true"
+        android:text=""
+        />
+
+</RelativeLayout>

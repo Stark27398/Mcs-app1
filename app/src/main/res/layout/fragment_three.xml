@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="app.mcs.projectoneeight.techhub.ThreeFragment">
+
+    <Button
+        android:id="@+id/m1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/color_change"
+        android:paddingRight="15dp"
+        android:shadowDx="30"
+        android:drawableRight="@drawable/ic_file_download_black_24dp"
+        android:gravity="center"
+        android:elevation="20dp"
+        android:text="Download previous questions"
+        android:textColor="@android:color/white" />
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/open"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:background="@drawable/folder"
+        android:drawableLeft="@drawable/open"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:shadowRadius="50"
+        android:shadowColor="@color/browser_actions_bg_grey"
+        android:shadowDx="100"
+        android:shadowDy="30"
+        android:elevation="20dp"
+        android:layout_margin="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Malloc Today"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/today"
+        android:layout_below="@+id/m1"
+        android:layout_marginLeft="20dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/today"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_centerInParent="true">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:id="@+id/card_view2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No new question !"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:id="@+id/malloc"/>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>
